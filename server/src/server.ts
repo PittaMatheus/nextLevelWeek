@@ -1,18 +1,12 @@
 import express from 'express';
+import routes from './routes';
 
 const app = express();
 
-app.get('/users', (request, response) =>{
-  console.log("meiras");
+app.use(express.json());
+app.use(routes);
 
-  // JSON
 
-  response.json([
-    'hellow',
-    'friend',
-    'or',
-    'world'
-  ])
-});
+// 36MINUTOS
 
 app.listen(3333);
