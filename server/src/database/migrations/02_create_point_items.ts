@@ -11,7 +11,6 @@ export async function up(Knex: Knex){
 
     table.string('item_id')
     .notNullable()
-    .notNullable()
     .references('id')
     .inTable('items');
   });
