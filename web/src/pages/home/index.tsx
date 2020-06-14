@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import logo from '../../assets/logo.svg';
+import { Link } from 'react-router-dom'
+
 
 import { FiLogIn } from 'react-icons/fi'
 
@@ -17,14 +19,14 @@ function App() {
           <p>Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente</p>
 
 
-          <a href="/cadastro">
+          <Link to="/create-point">
             <span>
-              {FiLogIn}
+              <FiLogIn />
             </span>
             <strong>
               Cadastre um ponto de coleta
             </strong>
-          </a>
+          </Link>
         </main>
       </div>
     </div>
